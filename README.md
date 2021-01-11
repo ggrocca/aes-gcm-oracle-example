@@ -41,6 +41,12 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+During development, remember to always check that requirements are up to date before committing, and update them if necessary:
+```
+diff requirements.txt <(pip3 freeze)
+pip3 freeze > requirements.txt
+```
+
 To get out of the virtual environment, run `deactivate`.
 
 ### Unit tests
