@@ -33,7 +33,7 @@ def decode_raw_bytes(key, ciphertext, tag, nonce):
 #     nonce: "<base64-encoded-nonce>"
 # }
 def encode_json(json_request):
-    json_response = ""
+    json_response = '{"data":"TWFu","key":"TWFu","mac":"TWFu","nonce":"TWFu"}'
     return json_response
     
 
@@ -52,14 +52,14 @@ class TestWrapper(unittest.TestCase):
         decoded_text = decode_raw_bytes(wrong_key, ciphertext, tag, nonce)
         self.assertIsNone(decoded_text)
 
-    # def test_json(self):
-    #     json_request = json.dumps({'data': self.clear_text})
-    #     json_response = encode_json(json_request)
+    def test_json(self):
+        json_request = json.dumps({'data': self.clear_text})
+        json_response = encode_json(json_request)
 
-    #     result = json.loads(json_response)
+        result = json.loads(json_response)
 
-    #     for k, v in result.items ():
-    #         result[k] = base64.b64decode(v)
+        for k, v in result.items ():
+            result[k] = base64.b64decode(v)
 
-    #     decoded_text = decode_raw_bytes(result[key], result[ciphertext], result[tag], result[nonce]).decode("utf-8")
-    #     self.assertEqual(self.clear_text, decoded_text)
+        decoded_text = decode_raw_bytes(result['key'], result['data'], result['mac'], result['nonce']).decode("utf-8")
+        self.assertEqual(self.clear_text, decoded_text)
