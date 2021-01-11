@@ -76,7 +76,7 @@ To run the integration test for a hypothetical production deployment:
 
 
 ## Appendix
-I've only tested and used this on macOS, with python 3.8 installed using brew. Should work everywhere else, though. It took more or less a day to set up all this (hey, it's the first time I use Python, ever).
+I've only tested and used this on macOS, with python 3.8 installed using brew. It should work everywhere else, though. It took more or less a day to set up all this (hey, it's the first time I use Python, ever).
 
 ### Various sources and resources
 - [Bytes to string in AES encryption and decryption in Python 3 - Stack Overflow](https://stackoverflow.com/questions/50481366/bytes-to-string-in-aes-encryption-and-decryption-in-python-3/50482935)
