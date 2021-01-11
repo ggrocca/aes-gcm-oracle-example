@@ -29,3 +29,23 @@ This is the example implementation of a micro-service that encrypts a text paylo
 ```
 - Unit test: <TBD. python unittest?> 
 - Integration test: <TBD. call with ... requires curl+bash?>
+
+## Using and running
+After cloning, do
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+To get out of the virtual environment, run `deactivate`.
+
+
+## Appendix
+I've only tested and used this on macOS, with python 3.8 installed using brew. Should work everywhere else, though.
+
+### Sources and resources
+[Bytes to string in AES encryption and decryption in Python 3 - Stack Overflow](https://stackoverflow.com/questions/50481366/bytes-to-string-in-aes-encryption-and-decryption-in-python-3/50482935)
+[GitHub - wolf43/AES-GCM-example: An example of AES GCM encryption mode using Pycryptodome](https://github.com/wolf43/AES-GCM-example)
+[Galois/Counter Mode - Wikipedia](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
+[Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
