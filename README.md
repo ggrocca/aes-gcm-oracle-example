@@ -14,7 +14,7 @@ This is the example implementation of a micro-service that encrypts a text paylo
 
 
 ## Specifications
-- Call syntax: POST `/oracleinvocation/`, with JSON payload
+- Call syntax: POST `/oracleinvocation/`, with JSON payload:
 ```
 {
     data: "<clear-text>"
@@ -34,7 +34,7 @@ This is the example implementation of a micro-service that encrypts a text paylo
 ## Using and running
 
 ### Python environment and dependencies
-After cloning, do:
+After `git clone`, do:
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -79,13 +79,13 @@ To run the integration test for a hypothetical production deployment:
 I've only tested and used this on macOS, with python 3.8 installed using brew. Should work everywhere else, though. It took more or less a day to set up all this (hey, it's the first time I use Python, ever).
 
 ### Various sources and resources
-[Bytes to string in AES encryption and decryption in Python 3 - Stack Overflow](https://stackoverflow.com/questions/50481366/bytes-to-string-in-aes-encryption-and-decryption-in-python-3/50482935)
-[GitHub - wolf43/AES-GCM-example: An example of AES GCM encryption mode using Pycryptodome](https://github.com/wolf43/AES-GCM-example)
-[Galois/Counter Mode - Wikipedia](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
-[Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-[Installing packages using pip and virtual environments — Python Packaging User Guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
-[Getting Started With Testing in Python – Real Python](https://realpython.com/python-testing/#automated-vs-manual-testing)
-[Encoding and Decoding Base64 Strings in Python](https://stackabuse.com/encoding-and-decoding-base64-strings-in-python/)
-[Running Your Flask Application Over HTTPS - miguelgrinberg.com](https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https)
-[Flask by Example – Project Setup – Real Python](https://realpython.com/flask-by-example-part-1-project-setup/)
-[Tutorial — Flask Documentation (1.1.x)](https://flask.palletsprojects.com/en/1.1.x/tutorial/)
+- [Bytes to string in AES encryption and decryption in Python 3 - Stack Overflow](https://stackoverflow.com/questions/50481366/bytes-to-string-in-aes-encryption-and-decryption-in-python-3/50482935)
+- [GitHub - wolf43/AES-GCM-example: An example of AES GCM encryption mode using Pycryptodome](https://github.com/wolf43/AES-GCM-example)
+- [Galois/Counter Mode - Wikipedia](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
+- [Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+- [Installing packages using pip and virtual environments — Python Packaging User Guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
+- [Getting Started With Testing in Python – Real Python](https://realpython.com/python-testing/#automated-vs-manual-testing)
+- [Encoding and Decoding Base64 Strings in Python](https://stackabuse.com/encoding-and-decoding-base64-strings-in-python/)
+- [Running Your Flask Application Over HTTPS - miguelgrinberg.com](https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https)
+- [Flask by Example – Project Setup – Real Python](https://realpython.com/flask-by-example-part-1-project-setup/)
+- [Tutorial — Flask Documentation (1.1.x)](https://flask.palletsprojects.com/en/1.1.x/tutorial/)
