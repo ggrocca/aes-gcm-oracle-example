@@ -54,3 +54,4 @@ I've only tested and used this on macOS, with python 3.8 installed using brew. S
 [GitHub - wolf43/AES-GCM-example: An example of AES GCM encryption mode using Pycryptodome](https://github.com/wolf43/AES-GCM-example)
 [Galois/Counter Mode - Wikipedia](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
 [Advanced Encryption Standard - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+[Getting Started With Testing in Python – Real Python](https://realpython.com/python-testing/#automated-vs-manual-testing)
