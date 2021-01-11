@@ -40,6 +40,11 @@ pip3 install -r requirements.txt
 
 To get out of the virtual environment, run `deactivate`.
 
+To perform provided unit tests on the aesgc_wrapper module, run:
+```
+python3 -m unittest aesgcm_wrapper.py
+```
+
 
 ## Appendix
 I've only tested and used this on macOS, with python 3.8 installed using brew. Should work everywhere else, though.
